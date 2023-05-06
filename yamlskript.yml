@@ -1,0 +1,10 @@
+
+---
+ - name: Github
+   hosts: all
+   become: true
+   tasks:
+     - name: git
+       command: sudo apt install git
+     - name: bash
+       command: git clone https://github.com/RomanGit14/dz
